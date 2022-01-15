@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+</head>
+
+<body class="bg-gray-800 text-white">
+    <div class="max-w-lg mt-3 py-6 bg-gray-600 mx-auto rounded shadow-lg">
+
+        <!-- ==== Header === -->
+        <div class="flex items-center justify-center">
+            <h1 class="text-center text-3xl font-bold ">My Todo App</h1>
+        </div>
+        <hr class="my-3 border">
+
+        <!-- ===  Main Body  ==== -->
+        <div id="todosContainer" class="mx-5 flex flex-col space-y-2">
+            <!-- <div class="flex justify-between items-center">
+                <h3 class="text-xl">Note 1</h3>
+                <button onclick="markAsDone(event)" class="bg-green-500 py-2 px-4 rounded font-semibold">Done</button>
+            </div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl">Note 2</h3>
+                <button onclick="markAsDone(event)" class="bg-green-500 py-2 px-4 rounded font-semibold">Done</button>
+            </div>
+            <div class="flex justify-between items-center">
+                <h3 class="text-xl">Note 3</h3>
+                <button onclick="markAsDone(event)" class="bg-green-500 py-2 px-4 rounded font-semibold">Done</button>
+            </div> -->
+        </div>
+        <hr class="my-4 border">
+
+        <!-- ==== Input Section ==== -->
+        <div class="px-5 flex justify-between space-x-2">
+            <input type="text" class="p-2 text-gray-600 font-semibold border-2 border-gray-400 rounded-md w-full focus:outline-none focus:border-blue-500 outline-none ring-2 focus:ring-3" placeholder="New Todo... ">
+            <button onclick="addTodo()" class="Addbtn bg-blue-500 py-2 px-5 rounded shadow-lg font-semibold">Add</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
